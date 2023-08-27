@@ -1,0 +1,19 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+  
+ .h_font{
+    font-family: 'Merienda', cursive;
+}
+
+.h_line{
+width: 150px;
+margin: 0 auto;
+height: 1.8px;
+}
+.alert-success{
+    position: fixed;
+    top: 75px;
+    left: 35px;
+}
