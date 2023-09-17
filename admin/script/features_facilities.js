@@ -18,6 +18,7 @@ function add_features()
     xhr.open('POST','ajax/features_facilities.php',true);
 
         xhr.onload = function(){
+          
         var myModal = document.getElementById('features-s')
         var modal = bootstrap.Modal.getInstance(myModal) // Returns a Bootstrap modal instance
         modal.hide();

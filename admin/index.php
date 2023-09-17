@@ -35,7 +35,7 @@ require('inc/db_config.php');
              </div>
              <div class="mb-3">
              <input name="admin_pass" required type="password" id="password" class="form-control shadow-none text-center " 
-             placeholder="Password" autocomplete="off">
+              placeholder="Password" autocomplete="off">
              <div class="input-group">
               <i id="open" class="bi bi-eye-fill " style="margin-top:-30px; margin-left:307px; cursor:pointer"></i>
               <i id="closed" class="bi bi-eye-slash" style="margin-top:-30px; margin-left:307px; display:none; cursor:pointer"></i>

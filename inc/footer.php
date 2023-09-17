@@ -67,6 +67,42 @@ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxV
     }
 
   }
+
+  let register_form = document.getElementById('register-form');
+      register_form.addEventlistener('submit', (e)=>{
+      e.preventDefault();
+
+      let data = new ForData();
+
+      data.append('name',register_form.elements['name'].value);
+      data.append('email',register_form.elements['email'].value);
+      data.append('phone',register_form.elements['phone'].value);
+      data.append('address',register_form.elements['address'].value);
+      data.append('pincode',register_form.elements['pincode'].value);
+      data.append('dob',register_form.elements['dob'].value);
+      data.append('pass',register_form.elements['pass'].value);
+      data.append('cpass',register_form.elements['cpass'].value);
+      data.append('image',register_form.elements['image'].files[0]);
+      data.append('register','');
+
+         
+      var myModal = document.getElementById('registerModal')
+      var modal = bootstrap.Modal.getInstance(myModal) // Returns a Bootstrap modal instance
+      modal.hide();
+
+  let xhr = new XMLHttpRequest();
+      xhr.open('POST','ajax/login_register.php',true);
+
+      xhr.onload = function(){
+          
+      }
+      xhr.send(data);
+
+
+
+
+     });
+
   setActive();
 </script>
 
